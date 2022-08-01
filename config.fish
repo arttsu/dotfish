@@ -34,3 +34,5 @@ if status is-interactive
 	vterm_prompt_end
     end
 end
+
+source ~/.config/fish/local.fish
