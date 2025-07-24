@@ -1,3 +1,5 @@
+source ~/.config/fish/local.fish
+
 if status is-interactive
     set fish_greeting ''
 
@@ -42,3 +44,22 @@ end
 # Path
 # ====
 fish_add_path ~/bin
+
+abbr pipi "pip install"
+abbr pipr "pip install -r requirements.txt"
+abbr pipd "pip uninstall"
+abbr pipf "pip freeze > requirements.txt"
+abbr pipl "pip list"
+
+abbr dira "direnv allow"
+
+abbr d "docker"
+abbr db "docker build"
+abbr dp "docker push"
+abbr dcb "docker-compose build"
+abbr dcu "docker-compose up"
+abbr dcud "docker-compose up -d"
+abbr dcd "docker-compose down"
+abbr dcdv "docker-compose down -v"
+
+zoxide init fish --cmd j | source
